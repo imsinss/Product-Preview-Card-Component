@@ -26,6 +26,11 @@ body {
     height: 200px;
     object-fit: cover;
 }
+
+.card-desktop-img {
+    display: none;
+}
+
 /* == Main Content == */
 
 .card-content {
@@ -98,7 +103,7 @@ a {
     .card {
         display: flex;
         flex-direction: row;
-        width: 50vw;
+        width: 35vw;
         height: 70vh;
         border: 1px solid #ccc;
         border-radius: 10px;
@@ -118,6 +123,12 @@ a {
         width: 140%;
         height: 100%;
         object-fit: cover;
+        display: block;
+        transition: .2s;
+    }
+
+    .card-desktop-img:hover {
+        transform: scale(1.1);
     }
 
     .item-type {
@@ -151,9 +162,12 @@ a {
     }
 
     .cta-cart-btn {
+        margin: 0 auto;
+        border-radius: 8px;
         margin-top: 15%;
         margin-right: 5%;
-        padding: 12px 130px;
+        width: 150px;
+        padding: 12px auto;
         display: inline-block;
-    }
+    } 
 }
